@@ -1,0 +1,15 @@
+<p>
+  server works!
+</p>
+<input 
+type = "text"
+class = "form-control"
+[(ngModel)] = "userName">
+<p>{{userName}}</p>
+<button [disabled] = "userName === ''"
+(click) = "userName = ''"
+ > Reset Name</button>
+
+
+<!--[disabled] = "expression"-->
+<!--we can replace (click) = onClickButton() by (click) = "userName = ''"-->
